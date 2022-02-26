@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Frontend Mentor | Launch countdown timer</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   
-  <title>Frontend Mentor | Launch countdown timer</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  We're launching soon
-
-  Days
-  Hours
-  Minutes
-  Seconds
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </head>
+  <body class="body_container">
+    <main class="main_container grid">
+      <div class="container_countdown grid">
+        <h1>We're launching soon</h1>
+        <div class="counter_display flex">
+          <div class="days_container flex">Days</div>
+          <div class="hours">Hours</div>
+          <div class="minutes">Minutes</div>
+          <div class="seconds">Seconds</div>
+        </div>
+      </div>
+      <div class="media_container flex">
+        <div class="social_media_accounts flex">
+          <button class="faceboook social_media_icons"></button>
+          <button class="pinterest social_media_icons"></button>
+          <button class="instagram social_media_icons"></button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer_display flex">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
 </html>
