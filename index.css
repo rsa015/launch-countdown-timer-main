@@ -1,0 +1,144 @@
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+picture {
+  margin: 0;
+}
+
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+/* Utility classes */
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.social_media_icons {
+    width: 40px;
+    height: 40px;
+}
+
+/* Variables */
+
+:root {
+    --pcolor-graylishblue: hsl(237, 18%, 59%);
+    --pcolor-softred: hsl(345, 95%, 68%);
+
+    --ncolor-white: hsl(0, 0%, 100%);
+    --ncolor-dsatblue: hsl(236, 21%, 26%);
+    --ncolor-darkblue: hsl(235, 16%, 14%);
+    --nncolor-vdarkblue: hsl(234, 17%, 12%);
+}
+
+/* Custom classes */
+
+/* Main */
+.main_container {
+    background: url(./images/bg-stars.svg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    background-color: var(--nncolor-vdarkblue);
+}
+
+.counter_display {
+    justify-content: center;
+}
+
+
+.container_countdown h1{
+    margin-top: 5rem;
+    text-align: center;
+    color: azure;
+    text-transform: uppercase;
+    font-family: 'Red Hat Text', sans-serif;
+    /* font-size: 15px; */
+    letter-spacing: .5rem;
+}
+
+.container_countdown {
+    height: 70vh;
+}
+
+.media_container {
+    background: url(./images/pattern-hills.svg) no-repeat bottom;
+    background-size: contain;
+    background-color: --nncolor-vdarkblue;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media_accounts{
+    column-gap: 3rem;
+}
+
+.social_media_accounts button {
+    border: none;
+    /* border-radius: 100%; */
+    cursor: pointer;
+}
+
+.social_media_accounts button:hover {
+    background-color: pink;
+}
+
+.facebook {
+    background: url(./images/icon-facebook.svg) no-repeat center;
+    background-size: cover;
+}
+.pinterest {
+    background: url(./images/icon-pinterest.svg) no-repeat center;
+    background-size: contain;
+}
+.instagram {
+    background: url(./images/icon-instagram.svg) no-repeat center;
+    background-size: cover;
+}
+
+/* Main */
+
+/* Footer */
+.footer_display {
+    justify-content: center;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
