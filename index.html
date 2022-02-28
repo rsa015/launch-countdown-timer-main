@@ -2,56 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Launch countdown timer</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
   </head>
-  <body class="body_container">
-    <main class="main_container grid">
-      <div class="container_countdown grid">
-        <div class="warning_text"><h1>We're launching soon</h1></div>
-        <div class="counter_display flex">
-          <div class="days_container">
-            <div class="day_box countdown_indiv_box " data-init-value="08">
-              
-            </div>
+  <body class="main_wrapper grid">
+    <main class="wrapper_main grid">
+      <div class="top_container">
+        <h1>We're launching soon</h1>
+        <div class="countdown_container flex">
+          <div class="days countdown_indiv_box">
+
           </div>
-          <div class="hours_container">
-            <div class="hours_box countdown_indiv_box " data-init-value="08">
-              
-            </div>
+          <div class="hours countdown_indiv_box">
+
           </div>
-          <div class="minutes_container">
-            <div class="munites_box countdown_indiv_box" data-init-value="08">
-              
-            </div>
+          <div class="min countdown_indiv_box">
+            
           </div>
-          <div class="seconds_container">
-            <div class="seconds_box countdown_indiv_box" data-init-value="08">
-              
-            </div>
+          <div class="secs countdown_indiv_box">
+
           </div>
         </div>
       </div>
-      <div class="media_container flex">
+      <div class="bottom_container">
         <div class="social_media_accounts flex">
-          <button class="facebook social_media_icons"></button>
-          <button class="pinterest social_media_icons"></button>
-          <button class="instagram social_media_icons"></button>
+          <button class="facebook btn_customized social_media_icons"></button>
+          <button class="pinterest btn_customized social_media_icons"></button>
+          <button class="instagram btn_customized social_media_icons"></button>
         </div>
       </div>
     </main>
-    <footer class="footer_display flex">
+    <footer class="footer flex">
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="#">Romuald S.A.</a>.
       </div>
     </footer>
   </body>

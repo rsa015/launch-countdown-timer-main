@@ -46,8 +46,8 @@ picture {
 }
 
 .social_media_icons {
-    width: 20px;
-    height: 20px;
+    min-width: 2rem;
+    min-height: 2rem;
 }
 
 .countdown_indiv_box {
@@ -56,12 +56,20 @@ picture {
     background-color:blueviolet;
 }
 
+.btn_customized {
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    opacity: .75;
+}
+
+
+
 /* Variables */
 
 :root {
     --pcolor-graylishblue: hsl(237, 18%, 59%);
     --pcolor-softred: hsl(345, 95%, 68%);
-
     --ncolor-white: hsl(0, 0%, 100%);
     --ncolor-dsatblue: hsl(236, 21%, 26%);
     --ncolor-darkblue: hsl(235, 16%, 14%);
@@ -70,70 +78,42 @@ picture {
 
 /* Custom classes */
 
-/* Main */
-.main_container {
+.main_wrapper {
     background: url(./images/bg-stars.svg) no-repeat center;
-    background-size: cover;
-    height: 100vh;
-    background-color: var(--nncolor-vdarkblue);
-    gap: 1rem;
+    background-size: contain;
+    background-color: var(--ncolor-darkblue);
 }
 
-.counter_display {
-    margin-top: 4rem;
-    justify-content: center;
-    align-items: center;
-    height: 10rem;
-    width: 90%;
-    background-color:hsl(0, 0%, 100%);
-    justify-self:center;
-    gap: 2rem;
+.wrapper_main {
+    min-height: 45rem;
 }
 
-
-.container_countdown {
-    gap: 2rem;
+.top_container {
+    min-height: 20rem;
 }
 
-
-.container_countdown h1{
-    margin-top: 5rem;
-    text-align: center;
-    color: azure;
+.top_container h1 {
     text-transform: uppercase;
-    font-family: 'Red Hat Text', sans-serif;
-    /* font-size: 15px; */
-    letter-spacing: .5rem;
+    text-align: center;
+    padding-top: 3rem;
 }
 
-.container_countdown {
-    height: 20rem;
+.countdown_container {
+    margin-top: 4rem;
+    column-gap: 1.5rem;
+    justify-content: center;
 }
 
-.media_container {
+.bottom_container{
     background: url(./images/pattern-hills.svg) no-repeat center;
     background-size: cover;
-    background-color: --nncolor-vdarkblue;
-    /* height: 10rem; */
+}
+
+.social_media_accounts {
     justify-content: center;
-    /* align-items: center; */
-}
-
-.social_media_accounts{
+    align-content: center;
     column-gap: 2rem;
-    margin-inline: auto;
-    align-items: center;
-}
-
-.social_media_accounts button {
-    border: none;
-    /* border-radius: 100%; */
-    cursor: pointer;
-
-}
-
-.social_media_accounts button:hover {
-    background-color: pink;
+    margin-bottom: 0;
 }
 
 .facebook {
@@ -146,40 +126,13 @@ picture {
 }
 .instagram {
     background: url(./images/icon-instagram.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
-@media (min-width: 375px) {
-    .countdown_indiv_box {
-        height: 6rem;
-        width: 6rem;
-        background-color:blueviolet;
-    }
-    .counter_display {
-        margin-top: 2rem;
-        justify-content: center;
-        align-items: center;
-        height: 8rem;
-        width: 80%;
-        background-color:hsl(0, 0%, 100%);
-        justify-self:center;
-        gap: 1rem;
-    }
+.social_media_accounts button:hover {
+    opacity: 1;
 }
 
-
-/* Main */
-
-/* Footer */
-.footer_display {
+.footer {
     justify-content: center;
-}
-
-.attribution {
-    font-size: 11px; 
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
